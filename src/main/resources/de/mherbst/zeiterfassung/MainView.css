@@ -1,0 +1,61 @@
+* {
+    -color: black;
+    -ergLblColor: blue;
+}
+
+.root {
+    -fx-background-color: "LightBlue";
+}
+
+.label {
+    -fx-font-name: "System Bold";
+    -fx-font-size: 24px;
+}
+
+#txtfldKommen {
+    -fx-font-size: 24px;
+    -fx-text-fill: -color;
+}
+
+#txtfldGehen {
+    -fx-font-size: 24px;
+    -fx-text-fill: -color;
+}
+
+#ergebnisLblMaxGehen {
+    -fx-text-fill: -ergLblColor;
+}
+
+#ergebnisLblAnwesenheit {
+    -fx-text-fill: -ergLblColor;
+}
+
+#ergebnisLblPause {
+    -fx-text-fill: -ergLblColor;
+}
+
+#ergebnisLblArbeitszeit {
+    -fx-text-fill: -ergLblColor;
+}
+
+#ergebnisLblIndustrie {
+    -fx-text-fill: -ergLblColor;
+}
+
+#lblAutor {
+    -fx-font-name: "System Bold";
+    -fx-font-size: 18px;
+    -fx-text-fill: #c419f7;
+}
+
+#lblVersion {
+    -fx-font-name: "System Bold";
+    -fx-font-size: 18px;
+    -fx-text-fill: #c419f7;
+}
+
+#btnExit {
+    -fx-font-name: "System Bold";
+    -fx-font-size: 24px;
+    -fx-text-align: center;
+}

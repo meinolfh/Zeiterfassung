@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="gridPane" maxHeight="520.0" maxWidth="400.0" minHeight="520.0" minWidth="400.0" prefHeight="520.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.mherbst.zeiterfassung.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="337.0" minWidth="10.0" prefWidth="168.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="588.0" minWidth="10.0" prefWidth="98.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+
+   <children>
+      <Label fx:id="lblKommen" text="Kommen:" GridPane.columnIndex="1" GridPane.rowIndex="0"> </Label>
+      <Label fx:id="lblGehen" text="Gehen:" GridPane.columnIndex="1" GridPane.rowIndex="1"> </Label>
+      <Label fx:id="lblMaxGehen" text="max. Gehen:" GridPane.columnIndex="1" GridPane.rowIndex="3"> </Label>
+      <Label fx:id="lblAnwesenheit" text="Anwesenheit:" GridPane.columnIndex="1" GridPane.rowIndex="4"> </Label>
+      <Label fx:id="lblPause" text="Pause:" GridPane.columnIndex="1" GridPane.rowIndex="5"> </Label>
+      <Label fx:id="lblArbeitszeit" text="Arbeitszeit:" GridPane.columnIndex="1" GridPane.rowIndex="6"> </Label>
+      <Label fx:id="lblIndustrie" text="Ind.Std / Ind.Min:" GridPane.columnIndex="1" GridPane.rowIndex="7"> </Label>
+
+      <Label fx:id="ergebnisLblMaxGehen" text="" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+      </Label>
+
+      <Label fx:id="ergebnisLblAnwesenheit" text="" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+      </Label>
+
+      <Label fx:id="ergebnisLblPause" text="" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+      </Label>
+
+      <Label fx:id="ergebnisLblArbeitszeit" text="" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+      </Label>
+
+      <Label fx:id="ergebnisLblIndustrie" text="" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+      </Label>
+
+      <TextField fx:id="txtfldKommen" maxHeight="35.0" maxWidth="90.0" minHeight="35.0" minWidth="90.0" prefHeight="35.0" prefWidth="90.0" promptText="00:00" GridPane.columnIndex="2" GridPane.rowIndex="0">
+      </TextField>
+
+      <TextField fx:id="txtfldGehen" maxHeight="35.0" maxWidth="90.0" minHeight="35.0" minWidth="90.0" prefHeight="35.0" prefWidth="90.0" promptText="00:00" GridPane.columnIndex="2" GridPane.rowIndex="1">
+      </TextField>
+
+      <Button fx:id="btnExit" alignment="CENTER" contentDisplay="CENTER" maxHeight="50.0" maxWidth="100.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Exit" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="9">
+      </Button>
+
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+         <children>
+            <Label fx:id="lblAutor" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="215.0" text="Meinolf Herbst" />
+            <Label fx:id="lblVersion" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="215.0" text="V 1.0" />
+         </children>
+      </VBox>
+
+   </children>
+</GridPane>
